@@ -3,9 +3,8 @@
 // Execute `rustlings hint variables6` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
-const NUMBER = 3;
+const NUMBER: u32 = 3; // j'ai déclaré la variable const (constante) en mettant le type donc u32
 fn main() {
-    println!("Number {}", NUMBER);
+    println!("Number {}", NUMBER);// pas besoin de rajoutez ou modifiez car le println va bien appeler la fonction NUMBER
 }

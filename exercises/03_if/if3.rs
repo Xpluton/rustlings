@@ -2,17 +2,16 @@
 //
 // Execute `rustlings hint if3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
 
 pub fn animal_habitat(animal: &str) -> &'static str {
     let identifier = if animal == "crab" {
         1
     } else if animal == "gopher" {
-        2.0
+        2 // .0 , suppression de ce .0 car on attends un chiffre entier
     } else if animal == "snake" {
         3
     } else {
-        "Unknown"
+        4 // "Unknown" suppression de Unknow et à la place j'ai mis 4 pour retourner un entier comme demander, c'est pour ça que ça ne marché par en retour iln'avait pas un entier
     };
 
     // DO NOT CHANGE THIS STATEMENT BELOW
