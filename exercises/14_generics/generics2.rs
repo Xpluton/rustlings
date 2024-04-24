@@ -6,15 +6,16 @@
 // Execute `rustlings hint generics2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
-
-struct Wrapper {
-    value: u32,
+// Nous déclarons une structure Wrapper générique qui prend un type générique T.
+struct Wrapper<T> {
+    value: T,
 }
 
-impl Wrapper {
-    pub fn new(value: u32) -> Self {
-        Wrapper { value }
+// Implémentation de méthodes pour la structure Wrapper.
+impl<T> Wrapper<T> {
+    // La méthode new crée une nouvelle instance de Wrapper avec une valeur de type T.
+    pub fn new(value: T) -> Self {
+        Wrapper { value } // Nous retournons une nouvelle instance de Wrapper avec la valeur donnée.
     }
 }
 

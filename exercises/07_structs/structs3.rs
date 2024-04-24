@@ -7,7 +7,6 @@
 // Execute `rustlings hint structs3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
 #[derive(Debug)]
 struct Package {
@@ -31,12 +30,14 @@ impl Package {
         }
     }
 
-    fn is_international(&self) -> ??? {
+    fn is_international(&self) -> bool { // ??? mise en commentaire car on attends un paramètre booléean
         // Something goes here...
+        self.sender_country != self.recipient_country // utiliisation de self por récuperer le package et recipient_country fait donc référence à l'inste du package qui a été défini au dessus
     }
 
-    fn get_fees(&self, cents_per_gram: u32) -> ??? {
+    fn get_fees(&self, cents_per_gram: u32) -> u32 { // ajout de u32 caron attends un entier liés au frais
         // Something goes here...
+        self.weight_in_grams * cents_per_gram // idem que pour la ligne self au dessus, on récupère le package weight_in_grams qu'on multiplie par cents_per_grams
     }
 }
 

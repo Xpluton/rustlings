@@ -11,7 +11,7 @@ pub fn animal_habitat(animal: &str) -> &'static str {
     } else if animal == "snake" {
         3
     } else {
-        4 // "Unknown" suppression de Unknow et à la place j'ai mis 4 pour retourner un entier comme demander, c'est pour ça que ça ne marché par en retour iln'avait pas un entier
+        4 // "Unknown" suppression de Unknow et à la place j'ai mis 4 pour retourner un entier comme demander, c'est pour ça que ça ne marché car en retour iln'avait pas un entier
     };
 
     // DO NOT CHANGE THIS STATEMENT BELOW
