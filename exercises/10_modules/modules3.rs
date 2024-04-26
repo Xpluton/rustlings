@@ -9,6 +9,8 @@
 // hint.
 
 // TODO: Complete this use statement
+
+/// on utilise cette commande pour apporter SystemTime et UNIX_EPOCH du module std::time
 use std::time::{SystemTime, UNIX_EPOCH};
 
 fn main() {

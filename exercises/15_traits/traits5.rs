@@ -7,6 +7,8 @@
 // Execute `rustlings hint traits5` or use the `hint` watch subcommand for a
 // hint.
 
+/// modification  de la fonction some_func en utilisant le paramètre T qui va implémenter les attribut de Sometrait et OtherTrait
+
 pub trait SomeTrait {
     fn some_function(&self) -> bool {
         true
@@ -28,7 +30,7 @@ impl SomeTrait for OtherStruct {}
 impl OtherTrait for OtherStruct {}
 
 // YOU MAY ONLY CHANGE THE NEXT LINE
-fn some_func<T: SomeTrait + OtherTrait>(item: T) -> bool { // modification  de la fonction some_func en utilisant le paramètre T qui va implémenter les attribut de Sometrait et OtherTrait
+fn some_func<T: SomeTrait + OtherTrait>(item: T) -> bool {
     item.some_function() && item.other_function()
 }
 

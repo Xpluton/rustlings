@@ -5,6 +5,12 @@
 // Execute `rustlings hint tests4` or use the `hint` watch subcommand for a
 // hint.
 
+/// Ce test doit vérifier si le programme panique lorsque nous essayons de créer un rectangle avec une hauteur négative.
+/// Utilisation de l'attribut should_panic pour vérifier la panique attendue
+///        
+/// Ce test doit vérifier si le programme panique lorsque nous essayons de créer un rectangle avec une hauteur négative.
+/// Utilisation de l'attribut should_panic pour vérifier la panique attendue
+
 struct Rectangle {
     width: i32,
     height: i32
@@ -34,9 +40,7 @@ mod tests {
 
     #[test]
     fn negative_width() {
-        // This test should check if program panics when we try to create rectangle with negative width
-        // Ce test doit vérifier si le programme panique lorsque nous essayons de créer un rectangle avec une hauteur négative.
-        // Utilisation de l'attribut should_panic pour vérifier la panique attendue
+        
         assert!(std::panic::catch_unwind(|| {
             let _rect = Rectangle::new(-10, 10);
         }).is_err());
@@ -44,9 +48,7 @@ mod tests {
 
     #[test]
     fn negative_height() {
-        // This test should check if program panics when we try to create rectangle with negative height
-        // Ce test doit vérifier si le programme panique lorsque nous essayons de créer un rectangle avec une hauteur négative.
-        // Utilisation de l'attribut should_panic pour vérifier la panique attendue
+ 
         assert!(std::panic::catch_unwind(|| {
             let _rect = Rectangle::new(10, -10);
         }).is_err());

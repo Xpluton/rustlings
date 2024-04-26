@@ -6,10 +6,13 @@
 // for a hint.
 
 
+/// inversion le & apparait ici plutôt que sur la ligne string_uppercase
+/// suppression du & sur data.to_uppercase car elle passe sur la valeur get_char
+
 fn main() {
     let data = "Rust is great!".to_string();
 
-    get_char(&data); // inversion le & apparait ici plutôt que sur la ligne string_uppercase
+    get_char(&data); 
 
     string_uppercase(data);
 }
@@ -21,7 +24,7 @@ fn get_char(data: &String) -> char {
 
 // Should take ownership
 fn string_uppercase(mut data: String) { 
-    data = data.to_uppercase(); //suppression du & sur data.to_uppercase car elle passe sur la valeur get_char
+    data = data.to_uppercase();
 
     println!("{}", data);
 }

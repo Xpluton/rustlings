@@ -5,13 +5,16 @@
 // Execute `rustlings hint lifetimes3` or use the `hint` watch subcommand for a
 // hint.
 
+/// Définition d'une structure Book qui contient deux champs de référence avec un lifetime 'a.
+/// Cela signifie que les références contenues dans une instance de Book doivent vivre au moins aussi longtemps que 'a.
+/// Champ 'author' contient une référence à une chaîne de caractères avec un lifetime 'a.
+/// Champ 'title' contient une référence à une chaîne de caractères avec un lifetime 'a.
 
 
-// Définition d'une structure Book qui contient deux champs de référence avec un lifetime 'a.
-// Cela signifie que les références contenues dans une instance de Book doivent vivre au moins aussi longtemps que 'a.
+
 struct Book<'a> {
-    author: &'a str,  // Champ 'author' contient une référence à une chaîne de caractères avec un lifetime 'a.
-    title: &'a str,   // Champ 'title' contient une référence à une chaîne de caractères avec un lifetime 'a.
+    author: &'a str,
+    title: &'a str,
 }
 
 fn main() {

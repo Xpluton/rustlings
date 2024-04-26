@@ -7,7 +7,7 @@
 //
 // No hints this time!
 
-
+/// rajout de la fonction String et string_Slice ; String_Slice utilisé pour toutes les valeurs qui ont des valeurs en &str (chaine de caratère)
 
 fn string_slice(arg: &str) {
     println!("{}", arg);
@@ -28,5 +28,4 @@ fn main() {
     string("Happy Monday!".to_string().replace("Mon", "Tues"));
     string("mY sHiFt KeY iS sTiCkY".to_lowercase());
 
-    // rajout de la fonction String et string_Slice ; String_Slice utilisé pour toutes les valeurs qui ont des valeurs en &str (chaine de caratère)
 }

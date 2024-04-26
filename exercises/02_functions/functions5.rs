@@ -3,6 +3,7 @@
 // Execute `rustlings hint functions5` or use the `hint` watch subcommand for a
 // hint.
 
+/// j'ai supprimé le point virgule qui bloquait le calcul num * num, en l'enlevant cela effectue le calcul et retourne le résultat
 
 fn main() {
     let answer = square(3);
@@ -10,5 +11,5 @@ fn main() {
 }
 
 fn square(num: i32) -> i32 {
-    num * num // j'ai supprimé le point virgule qui bloquait le calcul num * num, en l'enlevant cela effectue le calcul et retourne le résultat
+    num * num
 }

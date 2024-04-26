@@ -5,11 +5,14 @@
 // Execute `rustlings hint enums3` or use the `hint` watch subcommand for a
 // hint.
 
+/// enumération de tous les champs messages
+/// Creation de cette function message pour traiter les diffrents types de messages
+/// ajout d'une parenthèse ouvrante et fermante car il y a un paramètre de plus
 
 enum Message {
     // TODO: implement the message variant types based on their usage below
     ChangeColor((u8, u8, u8)),
-    Echo(String), // enumération de tous les champs messages
+    Echo(String),
     Move (Point),
     Quit,
 }
@@ -48,7 +51,6 @@ impl State {
         // Remember: When passing a tuple as a function argument, you'll need extra parentheses:
         // fn function((t, u, p, l, e))
 
-        // Creation de cette function message pour traiter les diffrents types de messages
         match message {
             Message::ChangeColor(color) => self.change_color(color),
             Message::Echo(s) => self.echo(s),
@@ -70,7 +72,7 @@ mod tests {
             color: (0, 0, 0),
             message: "hello world".to_string(),
         };
-        state.process(Message::ChangeColor((255, 0, 255)));// ajout d'une parenthèse ouvrante et fermante car il y a un paramètre de plus
+        state.process(Message::ChangeColor((255, 0, 255)));
         state.process(Message::Echo(String::from("Hello world!"))); 
         state.process(Message::Move(Point { x: 10, y: 15 }));
         state.process(Message::Quit);

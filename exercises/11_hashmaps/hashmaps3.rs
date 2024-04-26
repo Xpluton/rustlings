@@ -15,6 +15,8 @@
 // Execute `rustlings hint hashmaps3` or use the `hint` watch subcommand for a
 // hint.
 
+/// création des fonctions team_1 et team_2 avec le score et les buts des deux équipes
+
 
 use std::collections::HashMap;
 
@@ -40,7 +42,6 @@ fn build_scores_table(results: String) -> HashMap<String, Team> {
         // goals scored by team_2 will be the number of goals conceded by
         // team_1.
 
-        // création des fonctions team_1 et team_2 avec le score et les buts des deux équipes
         let team_1 = scores.entry(team_1_name.clone()).or_insert(Team {
             goals_scored: 0,
             goals_conceded: 0,
